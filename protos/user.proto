@@ -1,0 +1,14 @@
+// protoc --dart_out=./lib/gen ./protos/person.proto
+// protoc --swift_out=./ios/Classes ./protos/person.proto
+
+syntax = "proto3";
+
+option java_package = "com.mtilbrook.app";
+
+message User {
+  string uid = 1;
+  string providerId = 2;
+  string displayName = 3;
+  string email = 4;
+  bool isEmailVerified = 5;
+}

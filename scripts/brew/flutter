@@ -1,0 +1,12 @@
+cask_args appdir: '/Applications'
+
+tap 'homebrew/bundle'
+tap 'caskroom/cask'
+tap 'homebrew/services'
+
+brew 'usbmuxd', args: ['HEAD'], link: true
+brew 'libimobiledevice', args: ['HEAD']
+brew 'ios-deploy'
+brew 'cocoapods'
+brew 'protobuf'
+brew 'swift-protobuf'
